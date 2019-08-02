@@ -27,3 +27,8 @@ Simple Code Verification application built over Twilio API
 
 1. `$nvm use` will switch NodeJS version according to the `./.nvmrc` file
 2. `$npm start`
+
+
+## Docs (POSTMAN)
+
+- [Open doc](./docs/twilio_api.postman_collection.json)

@@ -15,9 +15,11 @@ module.exports = {
     }
   },
 
-  verifyCode(req, res, next) {
+  async verifyCode(req, res, next) {
     try {
-      userVerificationService.verifyCode(req.params.userId, req.body.verifyCode);
+      const result = await userVerificationService.verifyCode(req.params.userId, req.body.verificationCode);
+
+      return ResponseService.sendSuccessResponse(res, result);
     } catch (err) {
       return next(err);
     }
