@@ -13,6 +13,10 @@ module.exports = class UserService {
     return this._repository.findById(userId);
   }
 
+  updateById(userId, updateData) {
+    return this._repository.updateById(userId, updateData);
+  }
+
   findMany() {
     return this._repository.findMany();
   }

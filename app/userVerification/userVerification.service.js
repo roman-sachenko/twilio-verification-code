@@ -45,9 +45,9 @@ module.exports = class UserVerificationService {
     if (!userFound) {
       return false;
     }
-
+    
     if (verificationCode === userFound.verificationCode) {
-      await this._userService.updateById(userId, { verificationCode: null });
+      await this._userService.updateById(userId, { verificationCode: null, isVerified: true });
       return true;
     }
 
