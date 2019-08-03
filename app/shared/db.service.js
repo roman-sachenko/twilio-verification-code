@@ -46,6 +46,10 @@ module.exports = class DbService {
   }
 
   connect() {
-    return this._dbProvider.connect(this._options.connectionString, { useNewUrlParser: true });
+    return this._dbProvider.connect(this._options.connectionString, {
+      useNewUrlParser: true,
+      useFindAndModify: false,
+      useCreateIndex: true,
+    });
   }
 };

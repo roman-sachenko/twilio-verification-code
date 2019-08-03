@@ -1,7 +1,6 @@
 const DbService = require('../shared/db.service');
 
 const schemaData = {
-  email: { type: String, unique: true, required: true },
   phoneNumber: { type: String, unique: true, require: true },
   isVerified: { type: Boolean, required: true, default: false },
   verificationCode: { type: String },

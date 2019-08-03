@@ -7,15 +7,7 @@ module.exports = class TwilioService {
   }
 
   async sendSms({ body, to, from }) {
-    console.log({ body, to, from });
-    try {
-      
-      const result =  this._client.messages.create({ body, to, from });
-      console.log(result);
-      return result;
-    } catch (err) {
-      console.log(err);
-      throw err;
-    }
+    await this._client.messages.create({ body, to, from });
+    return true;
   }
 };

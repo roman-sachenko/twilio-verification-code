@@ -11,11 +11,6 @@
 				"method": "PUT",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvbWFuLnNhY2hlbmtvK2FkbWluQGdtYWlsLmNvbSIsIl9pZCI6IjVkMDNjNjRiMjQ1ZGFlMzFiZTFlNTU2OCIsImlhdCI6MTU2NDc0MjgyMywiZXhwIjoxNTY0NzQ2NDIzfQ.TFf1p2X903IluaxnQcqVkwJrFzaNfYhM2Ae-qpoUMmc",
-						"disabled": true
-					},
-					{
 						"key": "Content-Type",
 						"value": "application/json"
 					}
@@ -47,18 +42,13 @@
 				"method": "POST",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvbWFuLnNhY2hlbmtvK2FkbWluQGdtYWlsLmNvbSIsIl9pZCI6IjVkMDNjNjRiMjQ1ZGFlMzFiZTFlNTU2OCIsImlhdCI6MTU2NDc0MjgyMywiZXhwIjoxNTY0NzQ2NDIzfQ.TFf1p2X903IluaxnQcqVkwJrFzaNfYhM2Ae-qpoUMmc",
-						"disabled": true
-					},
-					{
 						"key": "Content-Type",
 						"value": "application/json"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"email\": \"roman.sachenko@gmail.com\",\n\t\"phoneNumber\": \"+380995253862\"\n}"
+					"raw": "{\n\t\"phoneNumber\": \"+380995253862\"\n}"
 				},
 				"url": {
 					"raw": "localhost:3000/api/v1/users/",
@@ -81,11 +71,6 @@
 			"request": {
 				"method": "GET",
 				"header": [
-					{
-						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvbWFuLnNhY2hlbmtvK2FkbWluQGdtYWlsLmNvbSIsIl9pZCI6IjVkMDNjNjRiMjQ1ZGFlMzFiZTFlNTU2OCIsImlhdCI6MTU2NDc0MjgyMywiZXhwIjoxNTY0NzQ2NDIzfQ.TFf1p2X903IluaxnQcqVkwJrFzaNfYhM2Ae-qpoUMmc",
-						"disabled": true
-					},
 					{
 						"key": "Content-Type",
 						"value": "application/json"
@@ -118,11 +103,6 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvbWFuLnNhY2hlbmtvK2FkbWluQGdtYWlsLmNvbSIsIl9pZCI6IjVkMDNjNjRiMjQ1ZGFlMzFiZTFlNTU2OCIsImlhdCI6MTU2NDc0MjgyMywiZXhwIjoxNTY0NzQ2NDIzfQ.TFf1p2X903IluaxnQcqVkwJrFzaNfYhM2Ae-qpoUMmc",
-						"disabled": true
-					},
-					{
 						"key": "Content-Type",
 						"value": "application/json"
 					}
@@ -152,11 +132,6 @@
 			"request": {
 				"method": "GET",
 				"header": [
-					{
-						"key": "Authorization",
-						"value": "bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvbWFuLnNhY2hlbmtvK2FkbWluQGdtYWlsLmNvbSIsIl9pZCI6IjVkMDNjNjRiMjQ1ZGFlMzFiZTFlNTU2OCIsImlhdCI6MTU2NDc0MjgyMywiZXhwIjoxNTY0NzQ2NDIzfQ.TFf1p2X903IluaxnQcqVkwJrFzaNfYhM2Ae-qpoUMmc",
-						"disabled": true
-					},
 					{
 						"key": "Content-Type",
 						"value": "application/json"
