@@ -10,9 +10,10 @@ Simple Code Verification application built over Twilio API
 
 ## Installation
 
-1. Install `package.json` dependencies `$npm i`
-2. Install NodeJS https://nodejs.org/en/download/
-3. Install/Prepare MongoDB https://www.mongodb.com/
+1. `$nvm use` will switch NodeJS version according to the `./.nvmrc` file
+2. Install `package.json` dependencies `$npm i`
+3. Install NodeJS https://nodejs.org/en/download/
+4. Install/Prepare MongoDB https://www.mongodb.com/
 
 
 ## Config
