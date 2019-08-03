@@ -3,7 +3,7 @@ const DbService = require('./db.service');
 module.exports = class DbModelService {
   constructor(modelName) {
     if (!modelName) {
-      throw new ReferenceError('model name is not provided');
+      throw new ReferenceError('ERR_MODEL_NAME_NOT_PROVIDED');
     }
 
     this._DbProvider = DbService;
@@ -35,9 +35,14 @@ module.exports = class DbModelService {
     return new this._model(data).save();
   }
 
+  findOne(query, options = {}) {
+    const queryOptions = this._mapQueryOptions(options);
+    return this._model.findOne(query).populate(queryOptions.populate).select(queryOptions.select).lean(queryOptions.lean);
+  }
+
   findById(id, options = {}) {
     if (!id) {
-      throw new ReferenceError('id is not provided');
+      throw new ReferenceError('ERR_ID_NOT_PROVIDED');
     }
 
     const queryOptions = this._mapQueryOptions(options);
@@ -66,7 +71,7 @@ module.exports = class DbModelService {
 
   updateById(id, updateData, options) {
     if (!id) {
-      throw new ReferenceError('id is not provided');
+      throw new ReferenceError('ERR_ID_NOT_PROVIDED');
     }
 
     const mappedOptions = { ...options, new: true };
