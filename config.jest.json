@@ -1,0 +1,13 @@
+{
+  
+  "roots": ["./test"],
+  "collectCoverage": true,
+  "coverageDirectory": "./test/coverage/unit",
+  "collectCoverageFrom": [
+    "./app/**/*.{js,jsx}",
+    "!**examples/**",
+    "!../**/node_modules/**",
+    "!**/vendor/**"
+  ],
+  "testEnvironment": "node"
+}
